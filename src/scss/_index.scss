@@ -1,0 +1,48 @@
+@use 'variables' as var;
+
+tablePokemon th, td {
+    border: 1px solid var.$color_border_table;
+    padding: 0.5em;
+    text-align: center;
+}
+
+tablePokemon th {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.pokemonTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.nameColumn {
+    width: 190px;
+}
+
+.urlColumn {
+    width: 350px;
+}
+
+.btn {
+    color: var.$color_text_btn_table;
+    background: transparent;
+    background-color: var.$color_back_btn_table;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 50px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.8s; /* Safari */
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var.$color_text_btn_table;
+    color: var.$color_back_btn_table;
+}

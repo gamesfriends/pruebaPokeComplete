@@ -1,0 +1,77 @@
+@use 'variables' as var;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var.$color_back_body;
+    color: var.$color_text_body;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mainTitle {
+    text-align: center;
+    margin: 1em;
+}
+
+/* MENu */
+.mainMenu--list {
+    background-color: var.$color_back_menu;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.mainMenu-list--item {
+    display: inline-block;
+}
+
+.mainMenu-list--item--link {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: var.$color_text_item_menu;
+    background-color: var.$color_back_item_menu;
+    width: 150px;
+    text-align: center;
+    margin: 0.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1.5ms;
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+.mainMenu-list--item a:hover {
+    background-color: var.$color_text_item_menu;
+    color: var.$color_back_item_menu;
+}
+/* MENU */
+
+/* FOOTER */
+.footContainer {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background-color: var.$color_back_footer;
+    color: var.$color_text_footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footContainer--text {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+/* FOOTER */
+
+@import 'index', 'pokemon';

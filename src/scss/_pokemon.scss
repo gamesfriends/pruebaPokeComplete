@@ -1,0 +1,43 @@
+@use 'variables' as var;
+
+.cards {
+    margin: 1em;
+}
+
+.card {
+    border: 2px solid var.$color_border_card;
+    width: 70%;
+    margin: auto;
+    border-radius: 2em;
+    padding: 2em;
+}
+
+.cardTitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.secondTitle {
+    text-transform: uppercase;
+    margin: 0.3em 0.3em 0.3em 0;
+}
+
+.abilityList {
+    list-style: none;
+}
+
+.abilitiesItem {
+    margin-left: 2em;
+}
+
+.ability {
+    padding: 0.5em;
+}
+
+.abilityItem {
+    border: 1px solid var.$color_border_ability;
+    padding: 0.2em;
+    margin-left: 0.8em;
+}
